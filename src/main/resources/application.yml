@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: ChatView
+    data:
+      mongodb:
+        host: localhost
+        port: 27017
+        database: products
+        username: tytlpapa
+        password: pr@Dev732
+        repositories:
+          enabled: true
+          base-package: com.kjslab.chat.view
+
+server:
+    port: 8080
+
+
