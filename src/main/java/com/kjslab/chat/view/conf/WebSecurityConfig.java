@@ -33,6 +33,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/", "/home").permitAll()
+                .antMatchers("/boots/**", "/libs/**").permitAll()
+
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
