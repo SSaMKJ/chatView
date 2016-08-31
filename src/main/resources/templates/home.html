@@ -6,200 +6,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>CatKatChat</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"/>
+    <link href="/libs/mdl/material.min.css" rel="stylesheet"/>
+    <link href="https://code.getmdl.io/1.2.0/material.purple-pink.min.css" rel="stylesheet"/>
 
-    <link href="/boots/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/libs/mdl/material.min.js"></script>
     <script src="/libs/js/jquery-3.0.0.min.js"></script>
-    <script src="/boots/js/bootstrap.min.js"></script>
+
+    <style>
+        .icon-in-tab {
+            padding-top:6px;
+        }
+        .people-list {
+            border-bottom-color: #eeeeee;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+        .people-icon {
+            width: 40px;
+            height: 40px;
+            padding-right: 5px;
+        }
+        .people-list--item {
+            padding: 5px 5px 5px 10px;
+        }
+
+        .people-status-msg {
+            font-size: 4px;;
+        }
+
+        .people-info1 {
+            font-size: 4px;;
+        }
+
+        .ckc-footer{
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+    </style>
 
     <script>
 
         var imageData=[];
+        imageData.push('http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg');
         imageData.push('http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/2641AE34540547F92B2CE6.jpe');
         imageData.push('http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/download.jpe');
         imageData.push('http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/20141230150214_24152.png');
     </script>
 </head>
 <body>
-<header>
-        <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">사용자</a></li>
-            <li role="presentation"><a href="#">대화방</a></li>
-            <li role="presentation"><a href="#">프로필</a></li>
-        </ul>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+                    mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header">
 
-</header>
-<section>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="">
+                <a href="#fixed-tab-1" class="mdl-layout__tab icon-in-tab is-active">
+                    <i class="material-icons" style="margin-top:15px;">people</i>
+                </a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab icon-in-tab">
+                    <i class="material-icons mdl-badge" data-badge="12" style="margin-top:15px;">forum</i>
+                </a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab icon-in-tab">
+                    <i class="material-icons" style="margin-top:15px;">settings</i>
+                </a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
 
-    <div class="list-group">
-        <div href="#" class="list-group-item active">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
-        <div href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">List group item heading</h4>
-            <table>
-                <tbody>
-                <td><img src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg" width="30px" height="35px"/></td>
-                <td><p class="list-group-item-text">강민경2</p></td>
-                </tbody>
-            </table>
-        </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <div class="mdl-list__item-primary-content">
+                                <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg"/>
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/2641AE34540547F92B2CE6.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/download.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/20141230150214_24152.png"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/2641AE34540547F92B2CE6.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/download.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/20141230150214_24152.png"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/강민경2.jpg"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/2641AE34540547F92B2CE6.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/download.jpe"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                    <div class="people-list mdl-list">
+                        <div class="mdl-list__item people-list--item">
+                            <span class="mdl-list__item-primary-content">
+                              <img class="people-icon" src="http://www.beautifulkoreanwomen.com/wp-content/uploads/2015/10/20141230150214_24152.png"/>
+                              <table>
+                                  <tbody>
+                                  <tr>
+                                      <td><span class="people-name">이름</span></td><td><span class="people-info1">추가정보</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><span class="people-status-msg">상태 메시지... 블라블라블라</span></td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                            </span>
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chats</i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="page-content">
+                </div>
+            </section>
+        </main>
+        <footer class="mdl-mini-footer ckc-footer">
+            <div class="mdl-mini-footer__left-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#" id="show-dialog">Filters</a></li>
+                    <li>male</li>
+                    <li>time</li>
+                </ul>
+            </div>
+        </footer>
     </div>
-
-    <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
-</section>
-
-
-<footer>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-    </nav>
-
-
-</footer>
+    <dialog class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Filter</h4>
+        <div class="mdl-dialog__content">
+            <p>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked=""/>
+                    <span class="mdl-radio__label">Male</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2"/>
+                    <span class="mdl-radio__label">Female</span>
+                </label>
+            </p>
+            <p>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked=""/>
+                    <span class="mdl-radio__label">Male</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2"/>
+                    <span class="mdl-radio__label">Female</span>
+                </label>
+            </p>
+            <p>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked=""/>
+                    <span class="mdl-checkbox__label">Checkbox</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input"/>
+                    <span class="mdl-checkbox__label">Checkbox</span>
+                </label>
+            </p>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button">Agree</button>
+            <button type="button" class="mdl-button close">Disagree</button>
+        </div>
+    </dialog>
 </body>
+<script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+    });
+
+</script>
 </html>
